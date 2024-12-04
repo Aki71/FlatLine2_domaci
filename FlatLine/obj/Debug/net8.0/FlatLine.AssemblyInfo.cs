@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlatLine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fd5d52b9cc160ae024c13dc0bb9b914444a07ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd18f8f2b92f55ad559c4f74c8bacf1d41409c48")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlatLine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlatLine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
