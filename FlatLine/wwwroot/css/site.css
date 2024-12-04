@@ -22,12 +22,19 @@ body {
     background-color: #6df490;
 }
 
+
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    font-family: Montserrat;
+    height: 70vh;
+    background-image: url('your-image.jpg'); /* Background image */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
 }
 
 .hero-content {
@@ -36,17 +43,53 @@ body {
 }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: bold;
         margin-bottom: 20px;
     }
 
     .hero-content p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 1.5;
     }
 
 .hero-image img {
-    max-width: 300px;
+    width: 500px;
 }
 
+
+button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #0a5025;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #6df490;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+#btn:hover,
+:focus {
+    color: #ffffff;
+    background: #0a5025;
+    border: 1px solid #0a5025;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #0a5025, 0 0 20px #0a5025, 0 0 50px #0a5025, 0 0 100px #0a5025;
+}
+
+.nav-link1 {
+    display: block;
+    padding: 0.8rem 0rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    font-family:Montserrat;
+    font-weight:900;
+    margin-right:10px;
+}
