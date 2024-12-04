@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projekti\\FlatLine-3.0\\FlatLine\\FlatLine\\FlatLine.csproj": {}
+    "C:\\Users\\acika\\Source\\Repos\\FlatLine2_domaci\\FlatLine\\FlatLine.csproj": {}
   },
   "projects": {
-    "D:\\Projekti\\FlatLine-3.0\\FlatLine\\FlatLine\\FlatLine.csproj": {
+    "C:\\Users\\acika\\Source\\Repos\\FlatLine2_domaci\\FlatLine\\FlatLine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekti\\FlatLine-3.0\\FlatLine\\FlatLine\\FlatLine.csproj",
+        "projectUniqueName": "C:\\Users\\acika\\Source\\Repos\\FlatLine2_domaci\\FlatLine\\FlatLine.csproj",
         "projectName": "FlatLine",
-        "projectPath": "D:\\Projekti\\FlatLine-3.0\\FlatLine\\FlatLine\\FlatLine.csproj",
-        "packagesPath": "C:\\Users\\mlade\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekti\\FlatLine-3.0\\FlatLine\\FlatLine\\obj\\",
+        "projectPath": "C:\\Users\\acika\\Source\\Repos\\FlatLine2_domaci\\FlatLine\\FlatLine.csproj",
+        "packagesPath": "C:\\Users\\acika\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acika\\Source\\Repos\\FlatLine2_domaci\\FlatLine\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mlade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -90,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

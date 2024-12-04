@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --bs-custom:#6df490;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -103,13 +104,16 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(2.4rem + 1.5vw);
+  font-weight:700;
 }
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
   }
 }
+
+
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
@@ -3962,13 +3966,14 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #6df490;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -7822,6 +7827,11 @@ textarea.form-control-lg {
   background-image: var(--bs-gradient) !important;
 }
 
+
+.bg-custom {
+    --bs-bg-opacity: 1;
+    background-color: #6df490, var(--bs-bg-opacity)) !important;
+}
 .user-select-all {
   -webkit-user-select: all !important;
   -moz-user-select: all !important;
