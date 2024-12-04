@@ -17,6 +17,7 @@ namespace FlatLine.Controllers
         public CoursesController(ApplicationDbContext context)
         {
             _context = context;
+
         }
 
         // GET: Courses

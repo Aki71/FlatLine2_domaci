@@ -269,3 +269,4 @@ D:\Projekti\FlatLine-3.0\FlatLine\FlatLine\bin\Debug\net8.0\runtimes\win\lib\net
 D:\Projekti\FlatLine-3.0\FlatLine\FlatLine\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\Projekti\FlatLine-3.0\FlatLine\FlatLine\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Projekti\FlatLine-3.0\FlatLine\FlatLine\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\Projekti\FlatLine-3.0\FlatLine\FlatLine\obj\Debug\net8.0\FlatLine.sourcelink.json
