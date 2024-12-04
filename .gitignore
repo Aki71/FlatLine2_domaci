@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+appsettings.json
+appsettings.*.json
+/FlatLine/obj/Release/net8.0/FlatLine.AssemblyInfoInputs.cache
