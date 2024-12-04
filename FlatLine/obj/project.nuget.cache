@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "79WskOe41mCT1194a13Rca/Ti9yQuuGSC76OFtiWIB4ruD3bFv+iXiKaFHqQZd1Fi3oLuNBqNDw/YVF6qYKkqg==",
+  "dgSpecHash": "YY+E1R3EKdulzwxBr/oyQdlcinJZaJknM+ix7Wc0i879agoMskF71CCjLPUlMyqrGKXh4eu5/SzHRxFD4X39rg==",
   "success": true,
-  "projectFilePath": "D:\\Projekti\\FlatLine-3.0\\FlatLine\\FlatLine\\FlatLine.csproj",
+  "projectFilePath": "C:\\Users\\mlade\\Desktop\\molimte\\FlatLine\\FlatLine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mlade\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\mlade\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -8305,11 +8305,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projekti\\FlatLine-3.0\\FlatLine\\FlatLine\\FlatLine.csproj",
+      "projectUniqueName": "C:\\Users\\mlade\\Desktop\\molimte\\FlatLine\\FlatLine.csproj",
       "projectName": "FlatLine",
-      "projectPath": "D:\\Projekti\\FlatLine-3.0\\FlatLine\\FlatLine\\FlatLine.csproj",
+      "projectPath": "C:\\Users\\mlade\\Desktop\\molimte\\FlatLine\\FlatLine.csproj",
       "packagesPath": "C:\\Users\\mlade\\.nuget\\packages\\",
-      "outputPath": "D:\\Projekti\\FlatLine-3.0\\FlatLine\\FlatLine\\obj\\",
+      "outputPath": "C:\\Users\\mlade\\Desktop\\molimte\\FlatLine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mlade\\AppData\\Roaming\\NuGet\\NuGet.Config",
