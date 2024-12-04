@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+
+<h1>Rate Our Service</h1>
+<form id="ratingForm">
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="rating">
+        <label>
+            <input type="radio" name="rating" value="1"> 1
+        </label>
+        <label>
+            <input type="radio" name="rating" value="2"> 2
+        </label>
+        <label>
+            <input type="radio" name="rating" value="3"> 3
+        </label>
+        <label>
+            <input type="radio" name="rating" value="4"> 4
+        </label>
+        <label>
+            <input type="radio" name="rating" value="5"> 5
+        </label>
+    </div>
+    <button type="submit">Submit</button>
+    <p class="error">Please complete all fields correctly before submitting.</p>
+    <p class="success">Thank you for your feedback!</p>
+</form>
+
