@@ -9,7 +9,8 @@
         public string? Author { get; set; }
         public decimal Price { get; set; }
         public int Duration { get; set; }
-
-
+        public byte[]? ProfilePicture { get; set; }
+        public string? ProfilePictureFileName { get; set; }
+        public string? ProfilePictureContentType { get; set; }
     }
 }

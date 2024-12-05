@@ -8654,24 +8654,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\acika\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mlade\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acika\\OneDrive - Računarska gimnazija Smart d.o.o\\Desktop\\FlatLine2_domaci\\FlatLine\\FlatLine.csproj",
+      "projectUniqueName": "C:\\Users\\mlade\\Desktop\\molimte\\FlatLine\\FlatLine.csproj",
       "projectName": "FlatLine",
-      "projectPath": "C:\\Users\\acika\\OneDrive - Računarska gimnazija Smart d.o.o\\Desktop\\FlatLine2_domaci\\FlatLine\\FlatLine.csproj",
-      "packagesPath": "C:\\Users\\acika\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acika\\OneDrive - Računarska gimnazija Smart d.o.o\\Desktop\\FlatLine2_domaci\\FlatLine\\obj\\",
+      "projectPath": "C:\\Users\\mlade\\Desktop\\molimte\\FlatLine\\FlatLine.csproj",
+      "packagesPath": "C:\\Users\\mlade\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mlade\\Desktop\\molimte\\FlatLine\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\acika\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\mlade\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8679,7 +8674,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8692,11 +8686,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8757,7 +8746,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
