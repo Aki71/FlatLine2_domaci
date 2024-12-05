@@ -4,19 +4,16 @@ using FlatLine.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace FlatLine.Data.Migrations
+namespace FlatLine.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241205110940_jessir")]
-    partial class jessir
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,8 +31,8 @@ namespace FlatLine.Data.Migrations
                     b.Property<string>("Author")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Duration")
-                        .HasColumnType("int");
+                    b.Property<TimeSpan>("Duration")
+                        .HasColumnType("time");
 
                     b.Property<string>("LongDescription")
                         .HasColumnType("nvarchar(max)");

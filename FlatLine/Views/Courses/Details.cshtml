@@ -54,7 +54,7 @@
 <div>
     @if (User.Identity.IsAuthenticated && Model.Author == authorId)
     {
-        <a asp-action="Edit" asp-route-id="model.Id">Edit |</a>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit |</a>
     }
     <a asp-action="Index">Back to List</a>
 </div>
