@@ -59,6 +59,7 @@ body {
 
 
 button {
+    font-family: Montserrat;
     padding: 10px 20px;
     text-transform: uppercase;
     border-radius: 30px;
@@ -76,9 +77,38 @@ button {
 
 #btn:hover,
 :focus {
+    font-family: Montserrat;
     color: #ffffff;
     background: #0a5025;
     border: 1px solid #0a5025;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #0a5025, 0 0 20px #0a5025, 0 0 50px #0a5025, 0 0 100px #0a5025;
+}
+
+button1 {
+    font-family: Montserrat;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #0a5025;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 2px solid #0a5025;
+    transition: 0.5s ease;
+    user-select: none;
+    text-align: center;
+}
+
+#btn1:hover,
+:focus {
+    font-family: Montserrat;
+    color: #ffffff;
+    background: #0a5025;
+    border: 2px solid #0a5025;
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
     box-shadow: 0 0 5px #0a5025, 0 0 20px #0a5025, 0 0 50px #0a5025, 0 0 100px #0a5025;
 }
@@ -92,4 +122,55 @@ button {
     font-family:Montserrat;
     font-weight:900;
     margin-right:10px;
+}
+
+.form-control {
+    font-family: Montserrat;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #0a5025;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 2.5px solid #0a5025;
+    transition: 0.5s ease;
+    user-select: none;
+    text-align: center;
+}
+
+    .form-control:focus {
+        font-family: Montserrat;
+        background-color: transparent;
+        text-transform: none;
+        border: 3px solid #0a5025;
+        transition: 0.5s ease;
+        outline: none;
+        box-shadow: none;
+    }
+
+
+p{
+    text-align:center;
+    font-family:Montserrat;
+    font-size:14px;
+}
+a {
+    font-family: Montserrat;
+    color: #0a5025;
+    text-decoration: none;
+}
+    a:hover {
+        color: #0a5025;
+        text-shadow: #0a5025 1px 0 10px;
+    }
+
+
+@media (max-width: 798px) {
+    .centriranje {
+        display: none;
+    }
 }
