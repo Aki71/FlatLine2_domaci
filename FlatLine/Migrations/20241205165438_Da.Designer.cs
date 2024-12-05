@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlatLine.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241205161342_init")]
-    partial class init
+    [Migration("20241205165438_Da")]
+    partial class Da
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

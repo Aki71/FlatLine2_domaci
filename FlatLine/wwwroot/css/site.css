@@ -24,6 +24,7 @@ body {
 
 
 .hero {
+    color: #0a5025;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +32,6 @@ body {
     flex-wrap: wrap;
     font-family: Montserrat;
     height: 70vh;
-    background-image: url('your-image.jpg'); /* Background image */
     background-position: center;
     background-size: cover;
     background-attachment: fixed; /* Parallax effect */
@@ -85,7 +85,7 @@ button {
     box-shadow: 0 0 5px #0a5025, 0 0 20px #0a5025, 0 0 50px #0a5025, 0 0 100px #0a5025;
 }
 
-button1 {
+/*button1 {
     font-family: Montserrat;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -111,7 +111,7 @@ button1 {
     border: 2px solid #0a5025;
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
     box-shadow: 0 0 5px #0a5025, 0 0 20px #0a5025, 0 0 50px #0a5025, 0 0 100px #0a5025;
-}
+}*/
 
 .nav-link1 {
     display: block;
@@ -161,10 +161,27 @@ a {
     font-family: Montserrat;
     color: #0a5025;
     text-decoration: none;
+    background-color: transparent; 
 }
+
+    
     a:hover {
         color: #0a5025;
-        text-shadow: #0a5025 1px 0 10px;
+        text-shadow: #0a5025 1px 0 10px; 
+        background-color: transparent; 
+    }
+
+    a:active {
+        text-decoration: none;
+        background-color: transparent; 
+        box-shadow: none;
+    }
+    
+    a:focus {
+        outline: none; 
+        background-color: transparent; 
+        box-shadow: none; 
+        border:0px;
     }
 
 
