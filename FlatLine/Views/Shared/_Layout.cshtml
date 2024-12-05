@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -34,7 +37,8 @@
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
-                <div class="centriranje" style="height:100px;width:100px;"></div>
+                
+                <div class="centriranje" style="height:100px;width:100px;"> </div>
             </div>
         </nav>
     </header>
