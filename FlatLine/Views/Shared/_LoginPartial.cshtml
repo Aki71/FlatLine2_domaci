@@ -7,15 +7,15 @@
 {
         var emailPrefix = User.Identity?.Name?.Split('@')[0];
     
-    <li class="nav-item">
-        <a class="nav-link1 text-dark" asp-area="Identity" asp-page="" title="Manage" style="pointer-events: none !important; padding-bottom: 0px;">
-            Hello @emailPrefix!
-        </a>
-    </li>
+        <li class="nav-item">
+            <form style="pointer-events: none !important;">
+                <button type="submit" id="btn">Zdravo, @emailPrefix!</button>
+            </form>
+        </li>
     // Extract the part of the email before the @
     <li class="nav-item">
     <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-            <button type="submit" id="btn">Logout</button>
+            <button type="submit" id="btn">Odjavi se</button>
         </form>
     </li>
     

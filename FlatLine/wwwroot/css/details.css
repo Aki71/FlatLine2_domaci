@@ -1,0 +1,43 @@
+﻿.kurs_naslov {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 900;
+}
+
+.hero {
+    color: #0a5025;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    flex-wrap: wrap;
+    font-family: Montserrat;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+}
+
+.hero-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+    .hero-content h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+.hero-image img {
+    width: 500px;
+}
+.course-actions{
+    justify-content:center;
+    align-content:center;
+}

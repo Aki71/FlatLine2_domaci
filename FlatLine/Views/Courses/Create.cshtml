@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 <h1>Create</h1>
 
 <h4>Course</h4>
@@ -13,49 +13,77 @@
     <div class="col-md-4">
         <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ShortDescription" class="control-label"></label>
-                <input asp-for="ShortDescription" class="form-control" />
-                <span asp-validation-for="ShortDescription" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LongDescription" class="control-label"></label>
-                <textarea asp-for="LongDescription" class="form-control"></textarea>
-                <span asp-validation-for="LongDescription" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Author" class="control-label"></label>
-                <input asp-for="Author" class="form-control" />
-                <span asp-validation-for="Author" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Duration" class="control-label"></label>
-                <input asp-for="Duration" class="form-control" />
-                <span asp-validation-for="Duration" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label for="ProfilePicture">Upload Profile Picture</label>
-                <input type="file" id="ProfilePicture" name="profilePicture" accept="image/*" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="hero" style="gap:80px;">
+                <div class="hero-content">
+                    <dl class="row">
+                        <dt class="col-sm-4">
+                            Ime
+                        </dt>
+
+                        <dd class="col-sm-10">
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </dd>
+                        <dt class="col-sm-5">
+                            Kratka deskripcija
+                        </dt>
+
+                        <dd class="col-sm-10">
+                            <input asp-for="ShortDescription" class="form-control" />
+                            <span asp-validation-for="ShortDescription" class="text-danger"></span>
+                        </dd>
+                        <dt class="col-sm-4">
+                            Duga deskripcija
+                        </dt>
+
+                        <dd class="col-sm-10">
+                            <textarea asp-for="LongDescription" class="form-control"></textarea>
+                            <span asp-validation-for="LongDescription" class="text-danger"></span>
+                        </dd>
+                        <dt class="col-sm-4">
+                            Autor
+                        </dt>
+
+                        <dd class="col-sm-10">
+                            <input asp-for="Author" class="form-control" />
+                            <span asp-validation-for="Author" class="text-danger"></span>
+                        </dd>
+                        <dt class="col-sm-4">
+                            Cena
+                        </dt>
+
+                        <dd class="col-sm-10">
+                            <input asp-for="Price" class="form-control" />
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </dd>
+                        <dt class="col-sm-4">
+                            Trajanje
+                        </dt>
+
+                        <dd class="col-sm-10">
+                            <input asp-for="Duration" class="form-control" />
+                            <span asp-validation-for="Duration" class="text-danger"></span>
+                        </dd>
+
+                        <dt class="col-sm-4">
+                            Slika
+                        </dt>
+                        <hr />
+                        <dd class="col-sm-10">
+                            <input type="file" id="ProfilePicture" name="profilePicture" accept="image/*" />
+                        </dd>
+                    </dl>
+                </div>
+            <div >
+                    <button id="btn" type="submit" value="Napravi" style="border:4px solid #0a5045;margin-right:10px;">Napravi</button>
+                    <a asp-action="Index">Nazad na kurseve</a>
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    
 </div>
 
 @section Scripts {
@@ -63,3 +91,5 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+

@@ -1,11 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Contact";
 }
+
 <link rel="stylesheet" href="~/css/contact.css" asp-append-version="true" />
-<h1>Ocena za kurseve</h1>
-<div class="row">
+<div class="hero">
     <form id="ratingForm">
         <div class="form-group">
+            <h1>Ocena za kurseve</h1>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
         <br />
@@ -28,7 +29,9 @@
         </div>
         <button type="submit" id="btn" style="border: 2px solid #0a5025;">Submit</button>
         <p class="success">Thank you for your feedback!</p>
+        <p class="error" style="color: red; display: none;"></p>
     </form>
 
 </div>
 
+<script src="~/js/site.js"></script>

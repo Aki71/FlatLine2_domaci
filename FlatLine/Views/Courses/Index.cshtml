@@ -8,8 +8,10 @@
      var authorId = User.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
      var emailPrefix = User.Identity?.Name?.Split('@')[0];
 }
-
+<h1>Kursevi</h1>
+<hr />
 <div class="course-container" style="margin-bottom:20px;">
+    
     @foreach (var item in Model)
     {
         <div class="course-card">
@@ -30,12 +32,12 @@
                     <p class="course-price">Cena: @Html.DisplayFor(modelItem => item.Price)$</p>
                     <p class="course-duration">Trajanje: @Html.DisplayFor(modelItem => item.Duration)</p>
                     <div class="course-actions">
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn1 btn-details">Details</a>
                         @if (User.Identity.IsAuthenticated && item.Author == authorId)
                         {
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-edit">Edit</a>
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-delete">Delete</a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn1 btn-edit">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn1 btn-delete">Delete</a>
                         }
-                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-details">Details</a>
                     </div>
                 </div>
             </div>
@@ -45,6 +47,6 @@
 <p>
     @if (User.Identity.IsAuthenticated)
     {
-        <a asp-action="Create"><button id="btn">Dodaj kurs</button></a>
+        <a asp-action="Create"><button id="btn" style="border:2px solid #0a5025">Dodaj kurs</button></a>
     }
 </p>

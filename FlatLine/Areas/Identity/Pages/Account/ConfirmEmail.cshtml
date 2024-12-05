@@ -1,0 +1,8 @@
+﻿@page
+@model ConfirmEmailModel
+@{
+    ViewData["Title"] = "Confirm email";
+}
+
+<partial name="_StatusMessage" model="Model.StatusMessage" />
+<a asp-area="Identity" asp-page="/Account/Login"><button id="btn" style="border:2px solid #0a5025">Prijavi se</button></a>

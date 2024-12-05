@@ -4,13 +4,8 @@
     align-items:center;
 }
 
-form {
-    align-content:center;
-    background-color: transparent;
-    width: 300px;
-    padding: 20px;
-    border-radius: 30px; /* Rounded corners for the form */
-    text-align: center;
+p{
+    margin-top:20px;
 }
 
 

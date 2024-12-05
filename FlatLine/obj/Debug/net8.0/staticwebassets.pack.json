@@ -21,8 +21,20 @@
       "PackagePath": "staticwebassets\\css\\contact.css"
     },
     {
+      "Id": "C:\\Users\\Windoows 10\\Source\\Repos\\FlatLine2_domaci\\FlatLine\\wwwroot\\css\\details.css",
+      "PackagePath": "staticwebassets\\css\\details.css"
+    },
+    {
+      "Id": "C:\\Users\\Windoows 10\\Source\\Repos\\FlatLine2_domaci\\FlatLine\\wwwroot\\css\\edit.css",
+      "PackagePath": "staticwebassets\\css\\edit.css"
+    },
+    {
       "Id": "C:\\Users\\Windoows 10\\Source\\Repos\\FlatLine2_domaci\\FlatLine\\wwwroot\\css\\kurs.css",
       "PackagePath": "staticwebassets\\css\\kurs.css"
+    },
+    {
+      "Id": "C:\\Users\\Windoows 10\\Source\\Repos\\FlatLine2_domaci\\FlatLine\\wwwroot\\css\\mail.css",
+      "PackagePath": "staticwebassets\\css\\mail.css"
     },
     {
       "Id": "C:\\Users\\Windoows 10\\Source\\Repos\\FlatLine2_domaci\\FlatLine\\wwwroot\\css\\site.css",

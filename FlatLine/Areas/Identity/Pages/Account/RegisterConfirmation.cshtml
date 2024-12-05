@@ -1,0 +1,22 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+<link rel="stylesheet" href="~/css/mail.css" asp-append-version="true" />
+<div class="row">
+    <h1 style="text-align:center;">Potvrdi registraciju</h1>
+    @{
+        if (@Model.DisplayConfirmAccountLink)
+        {
+            <p>
+                <a id="confirm-link" href="@Model.EmailConfirmationUrl"><button id="btn" style="border: 2px solid #0a5025;">Klikni ovde za uspešno registrovanje!</button></a>
+            </p>
+        }
+        else
+        {
+        }
+    }
+</div>
+
+

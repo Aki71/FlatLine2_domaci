@@ -4,55 +4,71 @@
     ViewData["Title"] = "Delete";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
-<h1>Delete</h1>
-
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Course</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ShortDescription)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ShortDescription)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LongDescription)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LongDescription)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Author)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Author)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Duration)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Duration)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+<h1>Brisanje</h1>
+<h3>Da li ste sigurni da želite da obrišete ovaj kurs?</h3>
+<hr />
+<div class="hero" style="gap:80px;">
+    <div class="hero-content">
+        <dl class="row">
+            <dt class="col-sm-4">
+                Ime
+            </dt>
+            <hr />
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-4">
+                Kratka deskripcija
+            </dt>
+            <hr />
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ShortDescription)
+            </dd>
+            <dt class="col-sm-4">
+                Duga deskripcija
+            </dt>
+            <hr />
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.LongDescription)
+            </dd>
+            <dt class="col-sm-4">
+                Cena
+            </dt>
+            <hr />
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+            <dt class="col-sm-4">
+                Trajanje
+            </dt>
+            <hr />
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Duration)
+            </dd>
+        </dl>
+    </div>
+   
+    <div class="hero-image">
+        @if (Model.ProfilePicture != null)
+        {
+            <img src="@Url.Action("GetProfilePicture", "Courses", new { id = Model.Id })" alt="Course Picture" class="course-image" />
+        }
+        else
+        {
+            <div class="no-image">No Image Available</div>
+        }
+        <div />
 </div>
+    
+</div>
+
+<form asp-action="Delete" style="text-align:center;">
+    <input type="hidden" asp-for="Id" />
+    <button id="btn" type="submit" value="Obriši" style="border:4px solid #0a5045;margin-right:10px;">Obriši</button>
+</form>
+
+    <div style="text-align:right;width:100%;font-weight:bold;">
+        <a asp-action="Index">Nazad na kurseve</a>
+    </div>
