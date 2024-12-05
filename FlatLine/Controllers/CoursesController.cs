@@ -8,6 +8,7 @@ using FlatLine.Data;
 using FlatLine.Models;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using System.Security.Claims;
 
 namespace FlatLine.Controllers
 {
@@ -71,6 +72,9 @@ namespace FlatLine.Controllers
                     }
                 }
 
+                var authorId = User.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+
+                course.Author = authorId;
                 _context.Add(course); // Add new course to the database
                 await _context.SaveChangesAsync(); // Save the changes to the database
                 return RedirectToAction(nameof(Index)); // Redirect to the courses index page
@@ -154,6 +158,13 @@ namespace FlatLine.Controllers
                 return NotFound();
             }
 
+            var authorId = User.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+
+            if (course.Author != authorId)
+            {
+                return NotFound();
+            }
+
             return View(course);
         }
 
@@ -163,6 +174,9 @@ namespace FlatLine.Controllers
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var course = await _context.Course.FindAsync(id);
+
+
+
             if (course != null)
             {
                 _context.Course.Remove(course); // Remove the course from the database
